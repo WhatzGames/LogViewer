@@ -6,7 +6,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApiVersioning();
-builder.Services.AddScoped<LogFetcherService>();
+builder.Services.AddLogFetcher();
 
 var app = builder.Build();
 

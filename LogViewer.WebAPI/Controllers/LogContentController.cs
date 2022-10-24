@@ -7,9 +7,9 @@ namespace LogViewer.WebAPI.Controllers
     [ApiController]
     public class LogContentController : Controller
     {
-        private readonly LogFetcherService _logFetcherService;
+        private readonly FileLogFetcherService _logFetcherService;
 
-        public LogContentController(LogFetcherService logFetcherService)
+        public LogContentController(FileLogFetcherService logFetcherService)
         {
             _logFetcherService = logFetcherService;
         }
